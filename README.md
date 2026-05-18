@@ -1,70 +1,365 @@
-# Getting Started with Create React App
+# ⚡ AtomQuest Goal Setting & Tracking Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web-based performance management system built for **AtomQuest Hackathon 1.0** to streamline employee goal setting, approvals, quarterly check-ins, reporting, and audit governance.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+### 🔗 Demo URL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[https://atomquest-2026-chi.vercel.app](https://atomquest-2026-chi.vercel.app)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔗 GitHub Repository
 
-### `npm test`
+[https://github.com/Agamdeep555/atomquest-2026](https://github.com/Agamdeep555/atomquest-2026)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# 📌 Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The **AtomQuest Goal Setting & Tracking Portal** is a complete goal lifecycle management platform designed to eliminate fragmented spreadsheets, email-based tracking, and manual review cycles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The platform enables:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Goal creation & approval workflows
+* Quarterly performance tracking
+* Automated progress calculations
+* Audit logging & governance
+* Real-time dashboards & reporting
+* Role-based access management
 
-### `npm run eject`
+The system is designed with a scalable, cloud-native, and cost-optimized architecture using modern web technologies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 🚀 Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✅ Phase 1 — Goal Creation & Approval
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Employee goal creation workflow
+* Thrust Area & Goal Definition
+* Multiple UoM support:
 
-## Learn More
+  * Numeric
+  * Percentage
+  * Timeline
+  * Zero-based
+* Goal weightage assignment
+* Validation rule enforcement
+* Manager approval workflow
+* Inline goal editing during approval
+* Goal locking after approval
+* Shared department goals support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ✅ Phase 2 — Achievement Tracking & Check-ins
 
-### Code Splitting
+* Quarterly achievement updates
+* Planned vs Actual tracking
+* Status updates:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  * Not Started
+  * On Track
+  * Completed
+* Automated score calculations
+* Manager check-in comments
+* Team visibility dashboards
+* Check-in schedule enforcement
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✅ Reporting & Governance
 
-### Making a Progressive Web App
+* Achievement Report generation
+* CSV export support
+* Completion dashboards
+* Audit trail logging
+* Real-time tracking
+* Organization-wide visibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+# 👥 User Roles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Role         | Responsibilities                                    |
+| ------------ | --------------------------------------------------- |
+| Employee     | Create goals, submit goals, update achievements     |
+| Manager (L1) | Review, approve, edit, and monitor team goals       |
+| Admin / HR   | Governance, reporting, audit logs, cycle management |
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 🔐 Demo Credentials
 
-### `npm run build` fails to minify
+| Role                       | User ID | Password |
+| -------------------------- | ------- | -------- |
+| Employee — Priya Sharma    | emp1    | emp123   |
+| Employee — Arjun Mehta     | emp2    | emp123   |
+| Employee — Neha Patel      | emp3    | emp123   |
+| Manager (L1) — Vikram Nair | mgr1    | mgr123   |
+| Manager (L1) — Sunita Rao  | mgr2    | mgr123   |
+| Admin / HR                 | admin   | admin123 |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+# 🧠 Validation Rules Implemented
+
+| Rule                        | Implementation                   |
+| --------------------------- | -------------------------------- |
+| Total weightage = 100%      | Checked during submission        |
+| Minimum 10% per goal        | Validated on save                |
+| Maximum 8 goals             | Add Goal disabled after limit    |
+| Goal locking after approval | Editing restricted post approval |
+| Shared goal restrictions    | Title & target locked            |
+
+---
+
+# 🏗️ Architecture Overview
+
+## Frontend
+
+* React 18
+* Next.js 14
+* Tailwind CSS
+* Role-based routing
+* Responsive dashboards
+* PWA-ready UI
+
+## Backend
+
+* Next.js API Routes
+* Node.js Runtime
+* REST APIs
+* Serverless Functions
+
+## Database
+
+* PostgreSQL
+* Supabase Managed Database
+* Prisma ORM
+
+## Authentication
+
+* NextAuth.js
+* JWT Session Tokens
+* Credentials Authentication
+* Microsoft Entra ID / Azure AD SSO
+
+## Reporting
+
+* Achievement Reports
+* CSV Export
+* Audit Logging
+* Completion Dashboard
+
+## Hosting
+
+* Vercel
+* Supabase Cloud
+* GitHub CI/CD
+
+---
+
+# ⚙️ Technology Stack
+
+| Layer          | Technology                         |
+| -------------- | ---------------------------------- |
+| Frontend       | React 18, Next.js 14, Tailwind CSS |
+| Backend        | Next.js API Routes, Node.js        |
+| Database       | PostgreSQL via Supabase            |
+| ORM            | Prisma                             |
+| Authentication | NextAuth.js + Azure AD             |
+| Hosting        | Vercel                             |
+| Reporting      | csv-writer                         |
+
+---
+
+# 🔄 Core Workflow
+
+```text
+Employee
+   ↓
+Goal Creation
+   ↓
+Validation Engine
+   ↓
+Manager Approval
+   ↓
+Goal Locking
+   ↓
+Quarterly Check-ins
+   ↓
+Score Calculation
+   ↓
+Achievement Reports
+   ↓
+Audit Logging
+```
+
+---
+
+# 📊 Implemented Modules
+
+## Employee Module
+
+* Goal creation
+* Goal submission
+* Quarterly updates
+* Progress tracking
+
+## Manager Module
+
+* Goal approvals
+* Inline editing
+* Team dashboards
+* Check-in comments
+
+## Admin / HR Module
+
+* Completion monitoring
+* Audit logs
+* Reports & exports
+* Cycle management
+
+---
+
+# 📈 Score Calculation Logic
+
+| UoM Type               | Formula                     |
+| ---------------------- | --------------------------- |
+| Min (Higher is better) | Achievement ÷ Target        |
+| Max (Lower is better)  | Target ÷ Achievement        |
+| Timeline               | Completion Date vs Deadline |
+| Zero-based             | If 0 → 100%, else 0%        |
+
+---
+
+# ☁️ Cloud Infrastructure
+
+The platform uses a cost-optimized cloud-native architecture:
+
+* Vercel for frontend & serverless APIs
+* Supabase for PostgreSQL database hosting
+* Prisma ORM with connection pooling
+* Global CDN support
+* Zero idle infrastructure cost
+
+Estimated Cost:
+
+* Hackathon Scale: ~$0/month
+* Production Scale (1000 employees): ~$20/month
+
+---
+
+# 🔒 Security Features
+
+* JWT-based authentication
+* Role-based authorization
+* Secure session handling
+* Audit trail logging
+* Row-level security support
+* Protected API routes
+
+---
+
+# 📁 Project Structure
+
+```bash
+src/
+ ├── app/
+ ├── components/
+ ├── lib/
+ ├── prisma/
+ ├── api/
+ ├── auth/
+ ├── dashboard/
+ └── utils/
+```
+
+---
+
+# 🚀 Local Setup
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/Agamdeep555/atomquest-2026.git
+```
+
+## 2. Navigate to Project
+
+```bash
+cd atomquest-2026
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+DATABASE_URL=
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+```
+
+## 5. Run Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# 📌 BRD Compliance Status
+
+| Requirement               | Status        |
+| ------------------------- | ------------- |
+| Goal Creation             | ✅ Implemented |
+| Goal Validation Rules     | ✅ Implemented |
+| Manager Approval Workflow | ✅ Implemented |
+| Goal Locking              | ✅ Implemented |
+| Shared Goals              | ✅ Implemented |
+| Quarterly Check-ins       | ✅ Implemented |
+| Score Computation         | ✅ Implemented |
+| Manager Comments          | ✅ Implemented |
+| Audit Trail               | ✅ Implemented |
+| Achievement Reports       | ✅ Implemented |
+| Azure AD Integration      | ✅ Integrated  |
+| Analytics Dashboard       | ⚠️ Partial    |
+
+---
+
+# 🎯 Key Highlights
+
+* Enterprise-style architecture
+* Fully role-based system
+* Scalable cloud-native deployment
+* Cost-optimized infrastructure
+* Production-ready authentication
+* Real-time reporting dashboards
+* Modular and maintainable codebase
+* Serverless deployment model
+
+---
+
+# 🏆 Hackathon Submission
+
+Built for:
+
+## ⚡ AtomQuest Hackathon 1.0
+
+Team Project — Goal Setting & Tracking Portal
+
+---
+
+# 📜 License
+
+This project was developed for hackathon demonstration and educational purposes.
