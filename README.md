@@ -50,9 +50,8 @@ The portal was built as a single-file React application (`App.jsx`) for ease of 
 
 | Resource | Link |
 |---|---|
-| Live Portal | https://atomquest-goal-portal.vercel.app |
-| Source Code | https://github.com/atomquest-team/goal-tracking-portal |
-| Architecture Diagram | https://atomquest-goal-portal.vercel.app/architecture.pdf |
+| Live Portal | https://atomquest-2026-chi.vercel.app |
+| Source Code | https://github.com/Agamdeep555/atomquest-2026 |
 
 > **Note:** The demo runs entirely in-memory. All data resets on page refresh. No backend or database is required to run or evaluate the demo.
 
@@ -676,7 +675,7 @@ Please make sure your changes:
 
 This project was created for the **AtomQuest Hackathon 1.0** internal competition and is intended for demonstration and evaluation purposes.
 
-For questions, reach out to the development team at `hr.admin@company.com` or raise an issue in the repository.
+For questions, reach out to the development team at `agamdeepsingh555@gmail.com` or raise an issue in the repository.
 
 ---
 
